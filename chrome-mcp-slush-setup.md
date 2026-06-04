@@ -50,18 +50,18 @@ section .col p { font-size: 18px; margin: 0; }
 section .category { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8B8B8B; font-family: 'Inter', monospace; margin-bottom: 8px; }
 section .category::before { content: ''; display: inline-block; width: 8px; height: 8px; background: #4DA2FF; flex-shrink: 0; }
 
-section .col.icon-marker h3::before { content: ''; width: 20px; height: 20px; background: none; margin-right: 8px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 2C12 2 5 10 5 14.5C5 18.09 8.13 21 12 21C15.87 21 19 18.09 19 14.5C19 10 12 2 12 2Z' stroke='%234DA2FF' stroke-width='1.5' fill='none'/%3E%3Cpath d='M12 18C14.21 18 16 16.21 16 14C16 11 12 6 12 6C12 6 8 11 8 14C8 16.21 9.79 18 12 18Z' stroke='%234DA2FF' stroke-width='1' fill='none'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat; }
+section .col.icon-marker h3::before { content: ''; width: 20px; height: 20px; margin-right: 8px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 2C12 2 5 10 5 14.5C5 18.09 8.13 21 12 21C15.87 21 19 18.09 19 14.5C19 10 12 2 12 2Z' stroke='%234DA2FF' stroke-width='1.5' fill='none'/%3E%3Cpath d='M12 18C14.21 18 16 16.21 16 14C16 11 12 6 12 6C12 6 8 11 8 14C8 16.21 9.79 18 12 18Z' stroke='%234DA2FF' stroke-width='1' fill='none'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat; }
 
 section .card { background: #0A0A0A; border: 1px solid #1A1A1A; border-radius: 8px; padding: 14px 18px; margin-bottom: 8px; }
 section .card h4 { color: #FFFFFF; margin: 0 0 4px 0; }
 section .card p { margin: 0; font-size: 16px; }
 
 /* cover-gradient */
-section.cover-gradient { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 60px; color: #FFFFFF; }
+section.cover-gradient { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 60px; color: #FFFFFF; background: linear-gradient(135deg, #0C1F3F 0%, #1040A0 60%, #4DA2FF 100%); }
 section.cover-gradient h1 { font-size: 56px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.03em; margin-bottom: 16px; position: relative; z-index: 1; }
 section.cover-gradient p { font-size: 22px; color: rgba(255,255,255,0.85); max-width: 60%; position: relative; z-index: 1; }
 section.cover-gradient footer { display: none; }
-section.cover-gradient::after { display: block !important; content: '' !important; position: absolute; bottom: 40px; right: 60px; width: 140px; height: 55px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 80'%3E%3Cg transform='translate(0,2) scale(0.19)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M240.057 159.914C255.698 179.553 265.052 204.39 265.052 231.407C265.052 258.424 255.414 284.019 239.362 303.768L237.971 305.475L237.608 303.31C237.292 301.477 236.929 299.613 236.502 297.749C228.46 262.421 202.265 232.134 159.148 207.597C130.029 191.071 113.361 171.195 108.985 148.586C106.157 133.972 108.258 119.294 112.318 106.717C116.379 94.1569 122.414 83.6187 127.549 77.2831L144.328 56.7754C147.267 53.1731 152.781 53.1731 155.719 56.7754L240.073 159.914H240.057ZM266.584 139.422L154.155 1.96703C152.007-0.655678 147.993-0.655678 145.845 1.96703L33.4316 139.422L33.0683 139.881C12.3868 165.555 0 198.181 0 233.698C0 316.408 67.1635 383.461 150 383.461C232.837 383.461 300 316.408 300 233.698C300 198.181 287.613 165.555 266.932 139.896L266.568 139.438L266.584 139.422ZM60.3381 159.472L70.3866 147.164L70.6868 149.439C70.9237 151.24 71.2239 153.041 71.5715 154.858C78.0809 189.001 101.322 217.456 140.173 239.496C173.952 258.724 193.622 280.828 199.278 305.064C201.648 315.176 202.059 325.129 201.032 333.835L200.969 334.372L200.479 334.609C185.233 342.05 168.09 346.237 149.984 346.237C86.4546 346.237 34.9484 294.826 34.9484 231.391C34.9484 204.153 44.4439 179.142 60.3065 159.44L60.3381 159.472Z' fill='white'/%3E%3C/g%3E%3Ctext x='72' y='57' font-family='Inter,sans-serif' font-size='52' font-weight='400' fill='white'%3ESui%3C/text%3E%3C/svg%3E") no-repeat center/contain; color: transparent; font-size: 0; padding: 0; border-radius: 0; z-index: 1; }
+section.cover-gradient::after { display: block; content: ''; position: absolute; bottom: 40px; right: 60px; width: 140px; height: 55px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 80'%3E%3Cg transform='translate(0,2) scale(0.19)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M240.057 159.914C255.698 179.553 265.052 204.39 265.052 231.407C265.052 258.424 255.414 284.019 239.362 303.768L237.971 305.475L237.608 303.31C237.292 301.477 236.929 299.613 236.502 297.749C228.46 262.421 202.265 232.134 159.148 207.597C130.029 191.071 113.361 171.195 108.985 148.586C106.157 133.972 108.258 119.294 112.318 106.717C116.379 94.1569 122.414 83.6187 127.549 77.2831L144.328 56.7754C147.267 53.1731 152.781 53.1731 155.719 56.7754L240.073 159.914H240.057ZM266.584 139.422L154.155 1.96703C152.007-0.655678 147.993-0.655678 145.845 1.96703L33.4316 139.422L33.0683 139.881C12.3868 165.555 0 198.181 0 233.698C0 316.408 67.1635 383.461 150 383.461C232.837 383.461 300 316.408 300 233.698C300 198.181 287.613 165.555 266.932 139.896L266.568 139.438L266.584 139.422ZM60.3381 159.472L70.3866 147.164L70.6868 149.439C70.9237 151.24 71.2239 153.041 71.5715 154.858C78.0809 189.001 101.322 217.456 140.173 239.496C173.952 258.724 193.622 280.828 199.278 305.064C201.648 315.176 202.059 325.129 201.032 333.835L200.969 334.372L200.479 334.609C185.233 342.05 168.09 346.237 149.984 346.237C86.4546 346.237 34.9484 294.826 34.9484 231.391C34.9484 204.153 44.4439 179.142 60.3065 159.44L60.3381 159.472Z' fill='white'/%3E%3C/g%3E%3Ctext x='72' y='57' font-family='Inter,sans-serif' font-size='52' font-weight='400' fill='white'%3ESui%3C/text%3E%3C/svg%3E") no-repeat center/contain; z-index: 1; }
 
 /* content */
 section.content { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
@@ -74,7 +74,7 @@ section.list-right .cards { display: flex; flex-direction: column; gap: 8px; }
 
 /* cols-2-center */
 section.cols-2-center { text-align: center; }
-section.cols-2-center h1 { text-align: center; width: 100%; }
+section.cols-2-center h1 { width: 100%; }
 section.cols-2-center .grid { grid-template-columns: repeat(2, 1fr); margin-top: 24px; text-align: left; }
 
 /* cols-3 */
@@ -82,7 +82,6 @@ section.cols-3 .grid { grid-template-columns: repeat(3, 1fr); margin-top: 24px; 
 
 /* cols-4-icon */
 section.cols-4-icon .grid { grid-template-columns: repeat(4, 1fr); margin-top: 24px; }
-section.cols-4-icon .col h3::before { display: none; }
 section.cols-4-icon .col.icon-marker h3::before { display: inline-block; }
 </style>
 
@@ -91,8 +90,6 @@ section.cols-4-icon .col.icon-marker h3::before { display: inline-block; }
      ===================================================== -->
 <!-- _class: cover-gradient -->
 <!-- _paginate: false -->
-
-![bg](/Users/alilloig/.claude/skills/sui-marp-theme/assets/images/sui-cover.png)
 
 # Sui dApp Test Automation
 
@@ -240,8 +237,7 @@ Necessary but not sufficient — a fallback profile also brings up 9222.
 
 ```bash
 curl -s http://127.0.0.1:9222/json \
-  | grep -oE \
-  'chrome-extension://(nkbih|opcgp)[^"]+' \
+  | grep -oE 'chrome-extension://(nkbihfbeogaeaoehlefnkodbefgpgknn|opcgpfmipidbgpenhmajoajpbobppdil)' \
   | sort -u
 ```
 
